@@ -1,0 +1,25 @@
+<section class="landing d-flex align-items-center">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="title position-relative">
+                <h1 class="fw-bolder text-light">الأخبار</h1>
+            </div> 
+            <div class="img">
+                <ngx-qrcode [elementType]="elementType" [value]="value" cssClass="qr-code" [errorCorrectionLevel]='errorCorrectionLevel'>
+                </ngx-qrcode>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bar">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <p class="text-light">الصفحة الرئيسية &gt; المركز الأعلامي</p>
+            <ul class="m-0 options list-unstyled d-flex align-items-center">
+                <li><button><i class="fa fa-share-alt" aria-hidden="true"></i> </button></li>
+                <li><button><i class="fa-regular fa-star"></i></button></li>
+                <li><button><i class="fa-solid fa-print"></i></button></li>
+            </ul>
+        </div>
+    </div>
+</div>

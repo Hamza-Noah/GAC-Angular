@@ -1,0 +1,44 @@
+@import "../../assets/style/Sections/variables";
+
+.landing {
+  background: url("../../assets/images/landing.jpg");
+  height: 206px;
+
+  .title {
+    padding-right: 40px;
+  }
+
+  .title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 45px;
+    height: 45px;
+    background-image: url("../../assets/images/SVG/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(90deg);
+  }
+}
+
+.bar {
+  height: 51%;
+  background: transparent linear-gradient(269deg, #004480 0%, #006b57 100%) 0%
+    0% no-repeat padding-box;
+
+  button {
+    border: none;
+    background: none;
+    color: white !important;
+    padding: 10px;
+  }
+}
+
+::ng-deep {
+  .qr-code img {
+    height: 105px;
+    width: 106px;
+    border-radius: 8px !important;
+  }
+}

@@ -1,0 +1,156 @@
+@import "../../assets/style/Sections/variables";
+
+nav {
+  .navbar-brand {
+    margin: 0;
+    img {
+      height: 80px !important;
+    }
+  }
+
+  .nav-link {
+    color: $main-color !important;
+    padding: 7px !important;
+    font-weight: bolder !important;
+  }
+
+  .close-btn {
+    background-color: transparent;
+    color: wheat;
+    border: none;
+    outline: none;
+    color: inherit;
+    left: 0 !important;
+    i {
+      color: white;
+      font-size: 30px;
+    }
+  }
+}
+
+nav {
+  @media (max-width: 991px) {
+    .navbar-brand img {
+      height: 50px !important;
+    }
+
+    .navbar-collapse {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      bottom: 0 !important;
+      min-height: 100vh;
+      margin-top: 0px;
+      overflow-y: auto;
+      z-index: 999 !important;
+    }
+
+    .navbar-collapse > ul li {
+      height: 100px;
+      background-color: $main-color;
+    }
+
+    .nav-item {
+      text-align: center;
+    }
+
+    .nav-link {
+      padding: 15px 0 !important;
+      background-color: $main-color;
+      color: white !important;
+    }
+
+    .dropdown-menu {
+      width: 90%;
+      margin: auto;
+    }
+
+    .dropdown-menu a {
+      background-color: white;
+      padding: 15px 25px;
+    }
+
+    .dropdown-menu li:first-child a {
+      border-radius: 10px 10px 0 0 !important;
+    }
+
+    .dropdown-menu li:last-child a {
+      border-radius: 0 0 10px 10px !important;
+    }
+
+    .vision {
+      display: none;
+    }
+  }
+}
+
+nav {
+  @media (min-width: 992px) {
+    .dropdown-menu {
+      right: 50%;
+      top: 62px;
+      transform: translateX(50%);
+      border-radius: 0 0 20px 20px !important;
+      color: $main-color;
+    }
+
+    .dropdown-menu li {
+      padding: 15px 20px;
+    }
+
+    .dropdown-menu li:last-child a {
+      margin-bottom: 5px;
+      border-radius: 0 0 20px 20px !important;
+    }
+
+    .nav-item {
+      font-size: 13px !important;
+    }
+
+    .active-route {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        width: 100%;
+        height: 4px;
+        background-color: $main-color;
+      }
+    }
+
+    .electronic-services {
+      color: $secondary-color !important;
+      border: solid $secondary-color;
+      border-radius: 30px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .nav-item {
+      font-size: 1rem;
+    }
+  }
+}
+
+::ng-deep {
+  .navbar {
+    height: 95px;
+  }
+
+  .dropdown-toggle::after {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+  }
+
+  @media (max-width: 991px) {
+    .dropdown-toggle::after {
+      bottom: 0;
+    }
+  }
+}

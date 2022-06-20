@@ -1,0 +1,61 @@
+@import  "../../assets/style/Sections/variables";
+
+.landing {
+  position: relative;
+  background: url("../../assets/images/landing.jpg");
+  background-size: cover;
+  height: calc(100vh - #{$header-height});
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../../assets/images/SVG/arrow.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+
+  @media (max-width: 767px) {
+    & {
+      height: calc(100vh - #{$header-height-small});
+    }
+  }
+
+  @media (min-width: 992px) {
+    p {
+      white-space: nowrap;
+    }
+  }
+}
+
+::ng-deep {
+  .landing .owl-item {
+    display: flex;
+    padding-top: 150px;
+    justify-content: center;
+    height: 500px;
+  }
+
+  .landing h1 {
+    margin-bottom: 60px;
+  }
+
+  .landing .owl-dots {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .landing .owl-dot span {
+    width: 30px !important;
+    height: 5px !important;
+    background-color: white;
+  }
+  .landing .owl-dot.active span {
+    height: 6px !important;
+    background-color: $secondary-color !important;
+  }
+}

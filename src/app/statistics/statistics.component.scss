@@ -1,0 +1,87 @@
+@import "../../assets/style/Sections/variables";
+
+.statistics {
+  margin: 50px 0;
+  padding: 50px 0;
+  background-color: $third-color;
+  background-image: url("../../assets/images/SVG/honesty.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -65px;
+  background-size: auto 100%;
+
+  h3 {
+    font-size: 2rem;
+    position: relative;
+    height: 100%;
+  }
+
+  h3::before,
+  h3::after {
+    content: "";
+    position: absolute;
+  }
+
+  h3::before {
+    width: 50px;
+    height: 50px;
+    background-image: url(../../assets/images/SVG/title-arrow.svg);
+    background-repeat: no-repeat;
+    right: -60px;
+    top: -30px !important;
+  }
+
+  h3::after {
+    width: 50px;
+    height: 50px;
+    background-image: url(../../assets/images/SVG/title-arrow2.svg);
+    background-repeat: no-repeat;
+    left: -60px;
+    bottom: -51px;
+  }
+
+  h3:hover {
+    ::before {
+      left: -60px;
+      bottom: -30px !important;
+    }
+  }
+  .statistic {
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    padding: 30px 0 10px;
+    width: 270px;
+    box-shadow: 0px 3px 20px #00000014;
+    margin: auto;
+  }
+
+  i {
+    display: block;
+    margin-bottom: 17.5px !important;
+  }
+
+  h4 {
+    color: $fourth-color;
+  }
+
+  span {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 991px) {
+    h3 {
+      margin: 70px auto !important;
+      text-align: center;
+    }
+
+    .statistic {
+      margin-bottom: 50px !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .statistic {
+      margin-left: 45px !important;
+    }
+  }
+}

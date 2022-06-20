@@ -1,0 +1,58 @@
+@import "../../assets/style/Sections/variables";
+
+.upperbar {
+  background: $main-color;
+  background: #004184;
+  color: white;
+  padding: 10px 0;
+
+  .date {
+    font-weight: 900;
+    font-size: 0.8rem !important;
+  }
+
+  .form-field {
+    position: relative;
+    width: fit-content;
+  }
+
+  input {
+    width: 80px;
+    border: white solid 2px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    outline: none;
+    background-color: $main-color !important;
+    transition: all $transition 0.3s;
+    color: white !important;
+    font-weight: bolder;
+    font-size: 0.8rem;
+  }
+
+  input:focus {
+    color: red;
+    width: 160px !important;
+  }
+
+  ::placeholder {
+    font-weight: bolder;
+    color: white;
+    opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+    color: white;
+  }
+
+  ::-ms-input-placeholder {
+    color: white;
+  }
+
+  i {
+    position: absolute;
+    left: 10px !important;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+  }
+}

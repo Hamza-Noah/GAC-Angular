@@ -1,0 +1,65 @@
+@import "../../assets/style/Sections/variables";
+
+section {
+  padding: 50px 0 100px;
+  background-color: $third-color;
+
+  .container {
+    padding: 0 50px;
+  }
+
+  h4 {
+    color: $main-color !important;
+    margin-bottom: 30px;
+  }
+
+  p {
+    line-height: 2;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    span {
+      color: $main-color;
+    }
+  }
+
+  table {
+    margin-bottom: 30px;
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, .5);
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(238, 238, 238, .5)  ;
+  }
+
+  td {
+    padding: 10px 15px;
+    border: solid 4px $third-color;
+  }
+}
+
+.link {
+  margin-top: 100px !important;
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  padding: 15px 30px;
+  border-radius: 30px 0;
+  box-shadow: 0px 3px 16px #00000029;
+
+  i {
+    margin-left: 10px;
+    background-color: $fourth-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-weight: bolder;
+  }
+}

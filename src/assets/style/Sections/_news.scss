@@ -1,0 +1,115 @@
+.news {
+  h2 {
+    color: $main-color;
+    font-weight: bolder;
+  }
+  .owl-carousel {
+    .owl-item {
+      z-index: 1;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      position: relative;
+
+      .item {
+        padding: 0 10px;
+      }
+
+      .img-wraper {
+        position: relative;
+        border: white 10px solid;
+        border-radius: 20px;
+        box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.16);
+        overflow: hidden;
+      }
+
+      .img-wraper::before {
+        position: absolute;
+        content: "";
+        background: transparent
+          linear-gradient(180deg, #00264d00 0%, #00264dbf 49%, #00264d 100%) 0%
+          0% no-repeat padding-box;
+        height: 100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .info {
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: solid 1px white;
+        border-radius: 10px;
+        text-align: right;
+        color: white;
+        padding: 10px;
+      }
+
+      .info p {
+        margin-bottom: 5px;
+        font-weight: bolder;
+      }
+
+      .info p {
+        font-size: calc(1rem / 2);
+      }
+
+      .info span {
+        font-size: 8px;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .owl-carousel .owl-item {
+      &.active {
+        .info {
+          font-size: 1rem / 2;
+        }
+        &.center {
+          z-index: 2;
+          .item {
+            transform: scale(2);
+          }
+        }
+      }
+    }
+
+    .owl-nav .owl-next,
+    .owl-nav .owl-prev {
+      position: absolute;
+      background-color: white;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      box-shadow: 0px 3px 16px #00000029;
+    }
+
+    .owl-nav .owl-next {
+      top: 50%;
+      left: -60px;
+    }
+
+    .owl-nav .owl-prev {
+      top: 50%;
+      right: -60px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: 5px 18px;
+    border-radius: 80px;
+    box-shadow: 0px 3px 6px #00000029;
+    border: solid 3px $secondary-color;
+    color: $secondary-color !important;
+  }
+}

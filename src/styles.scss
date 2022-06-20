@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+$main-color: #004184;
+$secondary-color: #008d33;
+$third-color: #e5eef8;
+$fourth-color: #007dc6;
+
+$transition: ease-in-out;
+
+$header-height: 155px;
+$header-height-small: 125px;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "TheSans";
+  // src: url("../fonts/TheSans-Plain.woff2") format("woff2"),
+  //   url("../fonts/TheSans-Plain.woff") format("woff");
+  src: url("./assets/fonts/TheSans-Plain.woff2") format("woff2"),
+    url("./assets/fonts/TheSans-Plain.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TheSansArab";
+  src: url("./assets/fonts/TheSansArab-Bold.woff2") format("woff2"),
+    url("./assets/fonts/TheSansArab-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TheSansArabic";
+  src: url("./assets/fonts/TheSansArabic-Bold.woff2") format("woff2"),
+    url("./assets/fonts/TheSansArabic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("./assets/fonts/IBMPlexSansArabic-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/IBMPlexSansArabic-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TheSansArabic Plain";
+  src: url("./assets/fonts/TheSansArabic-Bold.woff2") format("woff2"),
+    url("./assets/fonts/TheSansArabic-Plain.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TheSansArabic";
+  src: url("./assets/fonts/TheSansArabic-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/TheSansArabic-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TheSansArab Plain";
+  src: url("./assets/fonts/TheSansArab-Plain.woff2") format("woff2"),
+    url("./assets/fonts/TheSansArab-Plain.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
+body {
+  font-family: "theSansArabic";
+}
+
+body {
+  overflow-x: hidden !important;
+}

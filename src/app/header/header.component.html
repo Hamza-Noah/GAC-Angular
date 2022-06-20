@@ -1,0 +1,72 @@
+<header>
+    <app-upperbar></app-upperbar>
+    <!-- Start Navbar -->
+    <nav class="navbar p-0 navbar-expand-lg navbar-light">
+        <div class="container p-0">
+            <a class="navbar-brand m-3" href="#"><img src="assets/images/SVG/Logo.svg" alt=""></a>
+            <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0 ms-auto me-auto">
+                    <li class="text-center text-left posistion-relative">
+                        <button class="navbar-toggler m-3 position-absolute close-btn" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="/main"
+                            routerLinkActive="active-route">الرئيسية</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">عن الأمانة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="commision" routerLinkActive="active-route" href="#">عن
+                            اللجنة</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            المركز الأعلامي
+                        </a>
+                        <ul class="dropdown-menu  p-0" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-center" href="#" routerLink="/newsPage">الأخبار</a></li>
+                            <li><a class="dropdown-item text-center" href="#" routerLink="ads">الأعلانات</a></li>
+                            <li><a class="dropdown-item text-center" href="#">مركز التوعية</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            routerLink="/newsPage" aria-expanded="false">
+                            مكتبة الوثائق
+                        </a>
+                        <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-center" href="#" routerLink="/systems">الأنظمة
+                                    واللوائح</a></li>
+                            <li><a class="dropdown-item text-center" href="#" routerLink="ads">الأعلانات والأدلة
+                                    الأرشادية</a></li>
+                            <li><a class="dropdown-item text-center" href="#">الأحصائيات والقرارات</a></li>
+                            <li><a class="dropdown-item text-center" href="#">النماذج</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active-route">المساعدة والدعم</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link electronic-services" routerLinkActive="active-route">الخدمات
+                            الألكنرونية</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="link vision">
+                <a href="#"><img src="assets/images/SVG/vision2030.svg" alt=""></a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+</header>
